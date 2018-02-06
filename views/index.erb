@@ -1,5 +1,23 @@
-<h1>My name is <%= @random_name %></h1>
+<% if @name%>
+<h1>My name is <%=@name%></h1>
+<% end %>
 
 <div style='border: 3px dashed <%= @color %>'>
-  <img src='http://bit.ly/1eze8aE'>
-</div>"
+  <img src='https://i.ytimg.com/vi/0a_cFa0HrTg/maxresdefault.jpg'>
+</div>
+
+<form action="/named-dog">
+  <div>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+  </div>
+  <div>
+    <label for="color">Colour:</label>
+    <input type="text" id="text" name="color">
+    <input type="submit" value="Submit name and color"
+  </div>
+  <!--<div>-->
+    <!--<label for="msg">Message:</label>-->
+    <!--<textarea id="msg" name="user_message"></textarea>-->
+  <!--</div>-->
+</form>
